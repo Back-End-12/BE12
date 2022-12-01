@@ -25,28 +25,10 @@ const kegiatanSchema = new mongoose.Schema({
 },
 
   deskripsi: {
-    type: String,
-    required: true
-  }
-// },
-
-//    image: {
-//        public_id: {
-//            type: String,
-//            required: true
-//        },
-//        url: {
-//            type: String,
-//            required: true
-//        }
-   
-//    },
-
-
- 
-
-
-}, {timestamps: true});
+        type: String,
+        required: true
+    }
+});
 
 
 
