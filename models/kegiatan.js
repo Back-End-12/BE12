@@ -3,7 +3,11 @@ const {ObjectId} = mongoose.Schema;
 
 
 const kegiatanSchema = new mongoose.Schema({
-
+   img_kegiatan: {
+    type: String,
+    required: true
+},
+   
    judul_kegiatan: {
        type: String,
        trim: true,
