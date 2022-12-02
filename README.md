@@ -7,7 +7,7 @@ Dokumen ini dibuat sebagai panduan jalannya sistem
     | -------------- | --------- | ------------------ |
     | id             | ObjectId  | user ID            |
     | full_name      | string    | users' full name   |
-    | username       | string    | users' full name   |
+    | username       | string    | users' username    |
     | email          | string    | users' email       |
     | password       | string    | users' password    |
     | status         | string    | users' status      |
@@ -196,7 +196,7 @@ Dokumen ini dibuat sebagai panduan jalannya sistem
 
     Request :
     -   Method : GET            
-    -   Endpoint : /Allkegiatan          
+    -   Endpoint : /AllKegiatan          
     -   Header :          
         -   Accept: application/json 
     -   Body    :
@@ -318,5 +318,25 @@ Dokumen ini dibuat sebagai panduan jalannya sistem
                     "lokasi_kegiatan": "cianjur",
                     "deskripsi": "Terjebak berjam-jam di tengah kemacetan, sulit mendapatkan transportasi online, sehingga membutuhkan waktu jauh lebih lama untuk pulang menuju rumah, adalah derita yang dirasakan warga Ibukota Jakarta beberapa hari belakangan ini akibat banjir dan hujan ekstrem. Sejumlah daerah pun, lagi-lagi, tergenang banjir. Sampai Kamis, 6 Oktober kemarin, Badan Penanggulangan Bencana Daerah DKI Jakarta mencatat ada 17 ruas jalan 41 RT yang terimbas banjir. Bertambah dari hari sebelumnya sebanyak tujuh ruas jalan dan lima RT. Tak hanya itu, banjir juga merenggut tiga nyawa siswa Madrasah Tsanawiyah (MTS) Negeri 19, Pondok Labu, Jakarta Timur."
                 }    
-            } 
+            }
+            
+    **e.  Get Activity By Id**
+
+    Request :
+    -   Method : GET          
+    -   Endpoint : /getKegiatan/:id          
+    -   Header :          
+        -   Content-Type: application/json            
+        -   Accept: application/json 
+    -   Body:
+
+            {
+                "_id": "63896c4048e34d0178c74450",
+                "img_kegiatan": "aaa",
+                "judul_kegiatan": "bbb",
+                "tgl_kegiatan": "2022-02-11T17:00:00.000Z",
+                "lokasi_kegiatan": "bandung",
+                "deskripsi": "ànwowbe7ebsbwkw",
+                "__v": 0                
+            }            
               
