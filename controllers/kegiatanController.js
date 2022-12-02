@@ -58,6 +58,15 @@ exports.getAllKegiatan = async(req, res) => {
     }
   },
 
+exports.kegiatan_get_id = async (req, res) => {
+  const kegiatan = await Kegiatan.findById(req.params.id);
+
+  if (kegiatan) {
+    res.status(200).json(kegiatan);
+  } else {
+    res.status(404).json({ message: "kegiatan not found" });
+  },
+    
 // Update product image in Cloudinary and product data in MongoDB.
 exports.updateKegiatan = async (req, res, next) => {
     try {
@@ -73,10 +82,6 @@ exports.updateKegiatan = async (req, res, next) => {
         res.status(500).json({ message: "Server Error" })
       }
     }
-
-
-
-
 
 // delete product and product image in cloudinary
 exports.deleteKegiatan = async (req, res, next) => {
