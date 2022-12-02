@@ -2,8 +2,6 @@ const Kegiatan = require("../models/kegiatan");
 const ErrorResponse = require('../utils/errorResponse');
 const cloudinary = require('../utils/cloudinary');
 
-
-
 exports.createKegiatan = async (req, res, next) => {
 
     const { img_kegiatan, judul_kegiatan, tgl_kegiatan, lokasi_kegiatan, deskripsi } = req.body;
@@ -65,7 +63,8 @@ exports.kegiatan_get_id = async (req, res) => {
     res.status(200).json(kegiatan);
   } else {
     res.status(404).json({ message: "kegiatan not found" });
-  },
+  }
+}
     
 // Update product image in Cloudinary and product data in MongoDB.
 exports.updateKegiatan = async (req, res, next) => {
