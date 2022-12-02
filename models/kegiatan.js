@@ -12,7 +12,6 @@ const kegiatanSchema = new mongoose.Schema({
        type: String,
        trim: true,
        required : [true, 'Please add a product Name'],
-       maxlength: 100
    },
 
    tgl_kegiatan: {
