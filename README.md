@@ -325,8 +325,7 @@ Dokumen ini dibuat sebagai panduan jalannya sistem
     Request :
     -   Method : GET          
     -   Endpoint : /getKegiatan/:id          
-    -   Header :          
-        -   Content-Type: application/json            
+    -   Header :                     
         -   Accept: application/json 
     -   Body:
 
